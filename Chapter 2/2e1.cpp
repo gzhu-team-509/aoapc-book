@@ -3,12 +3,17 @@ using namespace std;
 
 int main()
 {
-    int n;
-    cin >> n;
-    // for (int i = 2; i <= 2*n; i+= 2)
-    for (int i = 1; i <= n; i++)
+    for (int a = 1; a < 10; a++)
     {
-        cout << 2 * i << endl;
+        for (int b = 0; b < 10; b++)
+        {
+            for (int c = 0; c < 10; c++)
+            {
+                if (a * 100 + b * 10 + c == a * a * a + b * b * b + c * c * c)
+                {
+                    cout << a << b << c << endl;
+                }
+            }
+        }
     }
-    return 0;
 }

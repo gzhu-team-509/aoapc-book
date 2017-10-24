@@ -1,15 +1,13 @@
 #include <iostream>
-#include <climits>
-#include <cmath>
 using namespace std;
+
+double a, b, c;
 
 int main()
 {
-    cout << INT_MAX << endl;
-    cout << INT_MIN << endl;
+    cin >> a >> b >> c;
 
-    cout << endl;
-
-    cout << (int)pow(2, sizeof(int) * 8) - 1 << endl;
-    cout << (int)-pow(2, sizeof(int) * 8) << endl;
+    cout.flags(cout.fixed);
+    cout.precision(3);
+    cout << (a + b + c) / 3 << endl;
 }

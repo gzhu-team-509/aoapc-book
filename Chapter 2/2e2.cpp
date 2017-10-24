@@ -1,13 +1,23 @@
 #include <iostream>
 using namespace std;
 
+int a, b, c;
+
 int main()
 {
-    double i;
-    for (i = 0; i != 10; i += 0.1)
+    int kase = 0;
+    while (cin >> a >> b >> c)
     {
-        cout << i << endl;
-        if (i > 10.2) break;
+        bool flag = false;
+        for (int n = 10; n <= 100; n++)
+        {
+            if (n % 3 == a && n % 5 == b && n % 7 == c)
+            {
+                cout << "Case " << ++kase << ": " << n << endl;
+                flag = true;
+                break;
+            }
+        }
+        if (!flag) cout << "Case " << ++kase << ": No answer"<< endl;
     }
-    return 0;
 }
