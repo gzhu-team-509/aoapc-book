@@ -1,5 +1,6 @@
 # aoapc-book
-《算法竞赛入门经典（第二版）》教材习题尝试解答
+
+《算法竞赛入门经典（第二版）》教材习题尝试解答，现已合并到[algorithm-code](https://github.com/lightyears1998/algorithm-code/tree/master/books/aoapc)仓库中。
 
 ## 命名规则约定
 
